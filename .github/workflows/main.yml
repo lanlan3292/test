@@ -18,16 +18,6 @@ jobs:
         include:
           - branch: main
             label: Main
-            filename: lRP-Main
-          - branch: main-extra/pure-glass
-            label: Main Extra Pure Glass
-            filename: lRP-M.E.-Pure-Glass
-          - branch: main-extra/C.R.I
-            label: Main Extra Crop Ready Indicator
-            filename: lRP-M.E.-C.R.I
-          - branch: main-extra/april-fool
-            label: Main Extra April Fool
-            filename: lRP-M.E.-April-Fool
 
     steps:
       - name: Checkout branch
