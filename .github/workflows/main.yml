@@ -73,7 +73,7 @@ jobs:
               break
             fi
 
-            BRANCH_COMMIT=$(git ls-remote --heads origin "refs/heads/$BRANCH" | cut -f1)
+            BRANCH_COMMIT=$(git ls-remote --heads origin "refs/heads/$BRANCH" | cut -f1 | cut -c1-7)
             if [ -z "$BRANCH_COMMIT" ]; then
               echo "WARNING: Matrix branch '$BRANCH' not found on origin. Proceeding with workflow."
               ALL_MATCH="false"
