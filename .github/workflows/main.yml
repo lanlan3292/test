@@ -43,8 +43,8 @@ jobs:
             exit 0
           fi
 
-          MATRIX_BRANCHES=("main" "main-extra/pure-glass" "main-extra/C.R.I" "main-extra/april-fool")
-          MATRIX_LABELS=("Main" "Main Extra Pure Glass" "Main Extra Crop Ready Indicator" "Main Extra April Fool")
+          MATRIX_BRANCHES=("main")
+          MATRIX_LABELS=("Main")
           ALL_MATCH="true"
 
           for i in "${!MATRIX_BRANCHES[@]}"; do
